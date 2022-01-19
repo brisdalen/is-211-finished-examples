@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Main {
 
@@ -27,11 +28,11 @@ public class Main {
                 new MovieListing(movie1, LocalDateTime.of(2022, 1, 19, 22, 0))
         );
 
-        ArrayList<MovieListing> listingList = new ArrayList<>(spidermanListings);
+        List<MovieListing> listingList = new ArrayList<>(spidermanListings);
         listingList.forEach(System.out::println);
         System.out.println("-----------------------------------------------------");
 
-        HashSet<MovieListing> listingSet = new HashSet<>(listingList);
+        Set<MovieListing> listingSet = new HashSet<>(listingList);
         listingSet.forEach(System.out::println);
     }
 
