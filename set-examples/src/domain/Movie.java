@@ -56,7 +56,7 @@ public class Movie {
     }
 
     public String getReleaseDateWithFormat() {
-        return getReleaseDateWithFormat("'d MMM uuuu'");
+        return getReleaseDateWithFormat("d MMM uuuu");
     }
 
     @Override
@@ -64,7 +64,7 @@ public class Movie {
         return "Movie{\n" +
                 "\tname='" + name + '\'' +
                 ", directorName='" + directorName + '\'' +
-                ", releaseDate=" + getReleaseDateWithFormat() + '\n' +
+                ", releaseDate='" + getReleaseDateWithFormat() + "'\n" +
                 '}';
     }
 }

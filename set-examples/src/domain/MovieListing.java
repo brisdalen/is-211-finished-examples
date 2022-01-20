@@ -32,7 +32,7 @@ public class MovieListing {
     public String toString() {
         return "MovieListing{" +
                 "movie=" + movie +
-                ", showtime='" + showtime.format(DateTimeFormatter.ofPattern("\"'B, kk:mm'")) +
+                ", showtime='" + showtime.format(DateTimeFormatter.ofPattern("B, kk:mm")) +
                 "'}";
     }
 }
