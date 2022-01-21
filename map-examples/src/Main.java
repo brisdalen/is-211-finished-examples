@@ -8,6 +8,7 @@ public class Main {
     public final String PRESIDENT_VALUE = "President";
     public final String VICE_PRESIDENT_VALUE = "Vice President";
     public final String FINANCIAL_OFFICER_VALUE = "Financial Officer";
+    public final String MARKETING_VALUE = "Head of Marketing";
     public final String BOARD_MEMBER_VALUE = "Board Member";
 
     private void init() {
@@ -23,6 +24,7 @@ public class Main {
         studentOrganizationStructure.put(VICE_PRESIDENT_VALUE, student1);
         studentOrganizationStructure.put(FINANCIAL_OFFICER_VALUE, student3);
         studentOrganizationStructure.put(BOARD_MEMBER_VALUE, student4);
+        studentOrganizationStructure.put(MARKETING_VALUE, student1); // same value, different keys
 
         studentOrganizationStructure.forEach((k, v) -> System.out.println(k + ": " + v.getFullName()));
     }
